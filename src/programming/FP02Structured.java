@@ -2,16 +2,25 @@ package programming;
 
 import java.util.List;
 
-public class FP01Structured {
+public class FP02Structured {
     public static void main(String[] args) {
 
         List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
 
-        //printAllNumberInListStructured(numbers);
-        printEvenNumberInListStructured(numbers);
+        int sum = addListStructured(numbers);
 
+        System.out.println(sum);
 
+    }
 
+    private static int addListStructured(List<Integer> numbers) {
+        // how to loo?
+        // how to store the sum?
+        int sum = 0;
+        for(int number: numbers){
+            sum += number;
+        }
+        return sum;
     }
 
     private static void printAllNumberInListStructured(List<Integer> numbers) {
